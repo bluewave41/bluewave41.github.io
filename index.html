@@ -1,33 +1,65 @@
+<!DOCTYPE HTML>
 <html>
-	<head>
-	<style>
-	body {color: white}
-	</style>
-	</head>
-	<body bgcolor="black">
-		<h1><center>RIP DENNIS</center></h1>
-		<p align="center">If you're reading this, Dennis just gave another stupid proejct out and nobody has a fucking clue what they're doing.</p>
-		<p align="center">Denis you're shit and your assignments are garbage, you need to learn ow to do shit plz.</p>
-		<p align="center">RIP Windows assignment #5</p>
-		<p></p>
-		<table>
-			<tr>
-				<td>
-					<p>Me before Dennis: </p>
-				</td>
-				<td>
-					<img src ="images/before.png" style="width:200px;height:200px;">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<p>Me after Dennis: </p>
-				</td>
-				<td>
-					<img src = "images/after.png" style="width:200px;height:200px;">
-				</td>
-			</tr>
-		</table>
-	<iframe width="0" height="0" src="https://www.youtube.com/embed/ytGKRRNrbdo?autoplay=1" frameborder="0" allowfullscreen></iframe>
-	</body>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Semeniuk Matthew, Nguyen Khoa, Mok Wesley</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script src="js/tictactoe.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Tic Tac Toe</h1>
+        <p>Drag the X and O images into the tic-tac-toe board:</p>
+        <h2 id="player">Tiger's turn</h2>
+        <table>
+            <tr>
+                <td>
+                    <div id="div1" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="div2" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="div3" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <p id="p1">Tiger: 0</p>
+                    <p id="p2">Dragon: 0</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="div4" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="div5" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="div6" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <p id="draw">Draws: 0</p>
+                    <p id="aion">AI: off</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="div7" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="div8" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="div9" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td>
+                    <img id="drag1" src="images/tiger.png" alt="Dragon" draggable="true" ondragstart="drag(event)" width="75" height="75" />
+                    <img id="drag2" src="images/dragon.png" alt="Tiger" draggable="true" ondragstart="drag(event)" width="75" height="75" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="reset()">Reset</button>
+                    <button type="button" onclick="startai()">Start AI</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
 </html>
