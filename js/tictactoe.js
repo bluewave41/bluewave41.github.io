@@ -434,7 +434,11 @@ If 0 is not found (all squares are filled) a -1 is returned instead.*/
 	    if (blockMove[1] + blockMove[2] + blockMove[3] == 2) {
 	        if (blockMove[1] > 0 && blockMove[2] > 0 || blockMove[2] > 0 && blockMove[3] > 0 || blockMove[1] > 0 && blockMove[3] > 0) {
 	            blockSquare = blockMove.indexOf(0);
-	            return blockSquare;
+				alert("You lose, Medhat is the best.");
+				player2Win++;
+				document.getElementById("p2").innerHTML = player + " " + player2Win; //adds wins to table
+				endgame(true);
+	            //return blockSquare;
 	        }
 	    }
 
@@ -444,7 +448,11 @@ If 0 is not found (all squares are filled) a -1 is returned instead.*/
 	    if (blockMove[1] + blockMove[2] + blockMove[3] == 2) {
 	        if (blockMove[1] > 0 && blockMove[2] > 0 || blockMove[2] > 0 && blockMove[3] > 0 || blockMove[1] > 0 && blockMove[3] > 0) {
 	            blockSquare = blockMove.indexOf(0) + 3;
-	            return blockSquare;
+				alert("You lose, Medhat is the best.");
+				player2Win++;
+				document.getElementById("p2").innerHTML = player + " " + player2Win; //adds wins to table
+				endgame(true);
+	            //return blockSquare;
 	        }
 	    }
 
@@ -454,7 +462,11 @@ If 0 is not found (all squares are filled) a -1 is returned instead.*/
 	    if (blockMove[1] + blockMove[2] + blockMove[3] == 2) {
 	        if (blockMove[1] > 0 && blockMove[2] > 0 || blockMove[2] > 0 && blockMove[3] > 0 || blockMove[1] > 0 && blockMove[3] > 0) {
 	            blockSquare = blockMove.indexOf(0) + 6;
-	            return blockSquare;
+				alert("You lose, Medhat is the best.");
+				player2Win++;
+				document.getElementById("p2").innerHTML = player + " " + player2Win; //adds wins to table
+				endgame(true);
+	            //return blockSquare;
 	        }
 	    }
 
@@ -468,7 +480,11 @@ If 0 is not found (all squares are filled) a -1 is returned instead.*/
 	                blockSquare = 4;
 	            else if (blockSquare == 3)
 	                blockSquare = 7;
-	            return blockSquare;
+				alert("You lose, Medhat is the best.");
+				player2Win++;
+				document.getElementById("p2").innerHTML = player + " " + player2Win; //adds wins to table
+				endgame(true);
+	            //return blockSquare;
 	        }
 	    }
 
@@ -484,7 +500,11 @@ If 0 is not found (all squares are filled) a -1 is returned instead.*/
 	                blockSquare = 5;
 	            else if (blockSquare == 3)
 	                blockSquare = 8;
-	            return blockSquare;
+				alert("You lose, Medhat is the best.");
+				player2Win++;
+				document.getElementById("p2").innerHTML = player + " " + player2Win; //adds wins to table
+				endgame(true);
+	            //return blockSquare;
 	        }
 	    }
 
@@ -500,7 +520,11 @@ If 0 is not found (all squares are filled) a -1 is returned instead.*/
 	                blockSquare = 6;
 	            else if (blockSquare == 3)
 	                blockSquare = 9;
-	            return blockSquare;
+				alert("You lose, Medhat is the best.");
+				player2Win++;
+				document.getElementById("p2").innerHTML = player + " " + player2Win; //adds wins to table
+				endgame(true);
+	            //return blockSquare;
 	        }
 	    }
 
@@ -514,7 +538,11 @@ If 0 is not found (all squares are filled) a -1 is returned instead.*/
 	                blockSquare = 5;
 	            else if (blockSquare == 3)
 	                blockSquare = 9;
-	            return blockSquare;
+				alert("You lose, Medhat is the best.");
+				player2Win++;
+				document.getElementById("p2").innerHTML = player + " " + player2Win; //adds wins to table
+				endgame(true);
+	            //return blockSquare;
 	        }
 	    }
 
@@ -530,7 +558,11 @@ If 0 is not found (all squares are filled) a -1 is returned instead.*/
 	                blockSquare = 7;
 	            else
 	                blockSquare = 3;
-	            return blockSquare;
+				alert("You lose, Medhat is the best.");
+				player2Win++;
+				document.getElementById("p2").innerHTML = player + " " + player2Win; //adds wins to table
+				endgame(true);
+	            //return blockSquare;
 	        }
 	    }
 	}
