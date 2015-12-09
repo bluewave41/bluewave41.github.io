@@ -1,18 +1,4 @@
-.box {
-    width: 80px;
-    height: 80px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
-    float: left;
-}
-h1 {
-    font-family: 'Helvetica', serif;
-}
 body {
-    font-family: 'Calibri', 'Arial', sans-serif;
-}
-#content {
-    margin: 0 auto;
-    width: 440px;
-    padding: 0 25px;
+    background-color: black;
+	color: white;
 }
